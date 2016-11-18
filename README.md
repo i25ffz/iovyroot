@@ -3,6 +3,16 @@ A root tool based on the [CVE-2015-1805 vulnerability](https://access.redhat.com
 
 It supports 32 and 64bit but requires absolute kernel addresses (see [offsets.c](jni/offsets.c))
 
-
-
 poc was done by idler1984 https://github.com/idl3r/testcode
+
+# system app clean
+$ndk-build
+$adb push iovy /data/local/tmp/iovy/
+$adb shell
+$>cd /data/local/tmp/iovy
+$>chmod 755 *.sh modulecrcpatch iovyroot
+$>./iovyroot
+$#./mount_fix.sh
+$#./clean_sysapp.sh
+$#exit
+$>reboot

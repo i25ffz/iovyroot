@@ -261,6 +261,10 @@ struct offsets offsets[] = {
 	{ "D5803", "Linux version 3.4.0-perf-gbe52486 (BuildUser@BuildHost) (gcc version 4.8 (GCC) ) #1 SMP PREEMPT Thu Sep 17 15:00:01 2015",
 	  { (void*)FSYNC_OFFSET(0xc10ec130) },
 	  (void*)0xc10e0c3c, (void*)0xc10e0b2c, (void*)0xc0f57884, (void*)0xc10df0d8 },
+	//Z3C 23.4.A.1.264
+	{ "D5833", "Linux version 3.4.0-perf-gbe52486 (BuildUser@BuildHost) (gcc version 4.8 (GCC) ) #1 SMP PREEMPT Thu Sep 17 15:00:01 2015",
+	  { (void*)FSYNC_OFFSET(0xc10ec130) },
+	  (void*)0xc10e0c3c, (void*)0xc10e0b2c, (void*)0xc0f57884, (void*)0xc10df0d8 },
 	//Z3C 23.5.A.0.575
 	{ "D5803", "Linux version 3.4.0-perf-g43ea728 (BuildUser@BuildHost) (gcc version 4.9.x-google 20140827 (prerelease) (GCC) ) #1 SMP PREEMPT Fri Apr 22 17:27:56 2016",
 	  { (void*)FSYNC_OFFSET(0xc1234b30) },
