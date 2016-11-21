@@ -6,13 +6,11 @@ It supports 32 and 64bit but requires absolute kernel addresses (see [offsets.c]
 poc was done by idler1984 https://github.com/idl3r/testcode
 
 # system app clean
-$ndk-build
-$adb push iovy /data/local/tmp/iovy/
-$adb shell
-$>cd /data/local/tmp/iovy
-$>chmod 755 *.sh modulecrcpatch iovyroot
-$>./iovyroot
-$#./mount_fix.sh
-$#./clean_sysapp.sh
-$#exit
-$>reboot
+###run in host
+> ndk-build && adb push iovy /data/local/tmp/iovy/ && adb shell
+###run in android normal shell
+> cd /data/local/tmp/iovy && chmod 755 *.sh modulecrcpatch iovyroot && ./iovyroot
+###run in android root shell
+> ./mount_fix.sh && ./clean_sysapp.sh
+
+You can do anything in clean_sysapp.sh script file... ~_~
