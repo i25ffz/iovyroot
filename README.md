@@ -14,3 +14,14 @@ poc was done by idler1984 https://github.com/idl3r/testcode
 > ./mount_fix.sh && ./clean_sysapp.sh
 
 You can do anything in clean_sysapp.sh script file... ~_~
+
+### install supersu
+http://su.chainfire.eu/#embed
+push busybox to /data/local/tmp
+cp busybox /system/xbin/
+cd /system/xbin
+busybox --install .
+ln -fs /system/xbin/busybox /sbin/unzip
+busybox unzip /data/local/tmp/supersu.zip META-INF/com/google/android/* -d /tmp/supersu
+busybox sh /tmp/supersu/META-INF/com/google/android/update-binary dummy 1 /data/local/tmp/supersu.zip
+
